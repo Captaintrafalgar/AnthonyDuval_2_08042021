@@ -1,0 +1,106 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 25px;
+}
+
+
+
+#mainlogo {
+    width: 170px;
+    height: 80px;
+}
+
+
+#mainnav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#mainul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.mainlien {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    margin: 30px;
+   
+}
+
+#inscription {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    margin: 30px;
+
+}
+
+.mainlien a {
+
+    padding-top: 65px;
+    text-decoration: none;
+    color: black;
+        
+
+}
+
+#inscription a {
+
+    padding-top: 65px;
+    text-decoration: none;
+    color: #0065FC;
+    font-weight: bold;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.mainlien a:hover {
+    border-top: solid 5px #0065FC;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+#inscription a:hover {
+    border-top: solid 5px #0065FC;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+#buttonsearchbar {
+    width: 200px;
+    height: 50px;
+    border-top-right-radius: 10px;
+    background-color:#0065FC;
+    border-bottom-right-radius: 10px;
+    color:white;
+    box-shadow: none;
+}
+
+#searchbar {
+    width:200px;
+    height:50px;
+}
+
+
+#iconsearchbar {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+}
+
+.searchcity {
+    position: relative;
+    display: flex;
+}
