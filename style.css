@@ -4,7 +4,6 @@ body {
 }
 
 
-
 #mainlogo {
     width: 170px;
     height: 80px;
@@ -20,6 +19,8 @@ body {
 #mainul {
     display: flex;
     flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
 }
 
 .mainlien {
@@ -40,7 +41,7 @@ body {
 
 .mainlien a {
 
-    padding-top: 65px;
+    padding-top: 50px;
     text-decoration: none;
     color: black;
         
@@ -49,7 +50,7 @@ body {
 
 #inscription a {
 
-    padding-top: 65px;
+    padding-top: 50px;
     text-decoration: none;
     color: #0065FC;
     font-weight: bold;
@@ -74,13 +75,18 @@ a {
 }
 
 #buttonsearchbar {
-    width: 200px;
+    width: 150px;
     height: 50px;
     border-top-right-radius: 10px;
     background-color:#0065FC;
     border-bottom-right-radius: 10px;
     color:white;
     box-shadow: none;
+    border-style: none;
+}
+
+#hiddennormal {
+    display: none;
 }
 
 #searchbar {
@@ -88,6 +94,48 @@ a {
     height:50px;
 }
 
+.classi {
+
+
+display: flex;
+position: relative;
+padding: 0;
+margin: 5px;
+border-radius: 30px;
+border: 2px solid #F2F2F2;
+height: 45px;
+font-size: 19px;
+font-weight: 800;
+align-items: center;
+
+}
+
+.classi:hover {
+
+    border: 2px solid #DEEBFF;
+}
+
+
+
+.spanicon {
+    display: inline-block;
+    border-radius: 30px;
+    height: 46px;
+    width: 46px;
+    text-align: center;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    line-height: 46px;
+    -webkit-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.spancategorie {
+    margin: 20px;
+}
 
 #iconsearchbar {
     height: 50px;
@@ -103,4 +151,309 @@ a {
 .searchcity {
     position: relative;
     display: flex;
+}
+
+::placeholder {
+    font-weight: bold;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+input { 
+    opacity: 50%;
+}
+
+#searchicons {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+#filter {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#chooseicon {
+ 
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+
+}
+
+#infospan {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #F2F2F2;
+    color: #0065FC;
+    border-radius: 30px ;
+    padding: 12px;
+    -webkit-border-radius: 30px ;
+    -moz-border-radius: 30px ;
+    -ms-border-radius: 30px ;
+    -o-border-radius: 30px ;
+}
+
+#presentationsite {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+#hebergements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #F2F2F2;
+    width: 70%;
+    height: 700px;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#populaire {
+    background-color: #F2F2F2;
+    width: 30%;
+    height: 700px;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#hebermarseille {
+     position: absolute;
+     top: 465px;
+     margin-left: 20px;
+    
+}
+
+#heberplus {
+    position: absolute;
+    top: 1115px;
+    margin-left: 20px;
+}
+
+.divimagehebergement {
+    background-color: white;
+    width: 25%;
+    height: 250px;
+    margin: 15px 0px;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    
+}
+
+
+.imagehebergement {
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.texthebergement {
+    margin-left: 10px;
+}
+
+.starblue {
+    height: 10px;
+    width: 10px;
+    color: #0065FC;
+}
+
+.stargrey {
+    height: 10px;
+    width: 10px;
+    color:#DEEBFF;
+}
+
+
+#titlepopulaire {
+
+     position: absolute;
+    top: 465px;
+    right: 350px;
+}
+
+#logopopulaire {
+
+    position: absolute;
+    top: 480px;
+    right: 100px;
+
+}
+
+.divimagepop {
+    background-color: white;
+    width: 70%;
+    height: 23%;
+    margin: 25px;
+    margin-top: 40px;
+    border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    -webkit-border-radius:20px;
+    
+}
+
+.imagepop {
+    object-fit: cover;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+
+#activites {
+    display: flex;
+    width: 100%;
+    margin-left: 30px;
+}
+
+#titleactivites {
+    margin-left: 30px;
+}
+
+.divgrand {
+
+    background-color: white;
+    width: 300%;
+    height: 600px;
+
+}
+
+.divpetit {
+    background-color: white;
+    width: 80%;
+    height: 280px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.imagegrand {
+    object-fit:cover;
+    width: 100%;
+    height: 90%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.imagepetit {
+    object-fit:cover;
+    width:100%;
+    height: 90%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.nomactivite {
+    margin: 10px;
+}
+
+.divcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer {
+    background-color:#DEEBFF;
+    display: flex;
+}
+
+.ulfooter {
+    list-style: none;
+}
+
+@media screen and (max-width:700px) {
+
+    #inscription {
+        position: absolute;
+        top: 25px;
+        right: 60px;
+
+    }
+
+    #mainnav {
+        flex-direction: column;
+    }
+
+    #mainul {
+        width: 100%;
+    }
+
+    .mainlien {
+        width: 50%;
+        margin: 0;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .mainlien a:hover {
+        
+        border-bottom: 1px solid #0065FC;
+
+
+    }
+
+    .mainlien a:hover {
+        border-top: 0px;
+        border-bottom: 1px solid #0065FC;
+        padding-bottom: 30px;
+        
+    }
+
+    #hiddenresponsive {
+        display: none;
+    }
+
+    #hiddennormal {
+        display:block;
+        height: 20px;
+        width: 20px;
+        margin: auto;
+    }
+
+    #buttonsearchbar {
+        width: 50px;
+    
+}
+    
+
+
 }
