@@ -1,3 +1,5 @@
+/* corriger le :hover du menu desktop */
+
 body {
     font-family: 'Raleway', sans-serif;
     margin: 25px;
@@ -21,6 +23,14 @@ body {
     flex-flow: row wrap;
     padding: 0;
     margin: 0;
+}
+
+#mainul:hover {
+    
+    border-top: solid 5px #0065FC;
+    color: #0065FC;
+   
+
 }
 
 .mainlien {
@@ -206,6 +216,13 @@ input {
    
 }
 
+ #heberpop {
+ 
+    display:flex;
+
+
+ }
+
 #hebergements {
     display: flex;
     flex-direction: column;
@@ -248,6 +265,8 @@ input {
     justify-content: space-between;
     align-items: center;
     margin: 0 20px 0 20px;
+    position: relative;
+    align-content: flex-start;
 }
 
 
@@ -255,7 +274,6 @@ input {
 .divimagehebergement {
     background-color: white;
     width: 25%;
-    height: 250px;
     margin: 15px 0px;
     border-radius:20px;
     -webkit-border-radius:20px;
@@ -272,7 +290,7 @@ input {
 .imagehebergement {
     object-fit: cover;
     width: 95%;
-    height: 50%;
+    height: 120px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     padding: 5px;
@@ -300,19 +318,27 @@ input {
     display: flex;
     margin: 0;
     min-width: 50px;
+    margin-bottom: 10px;
 }
 
 .etoiles {
     margin:0;
     Padding: 0;
+    position: absolute;
+    bottom: 0;
 }
 
 .popcontenu {
-    position: relative;
+    display: flex;
     margin: 5px;
+    flex-direction: column;
+   position: relative;
 }
 
-
+.positionimg {
+    display:flex;
+    flex-direction: column;
+}
 
 .paragraphehebergement>h3 {
     margin-left: 10px;
@@ -324,7 +350,7 @@ input {
     display:flex;
     padding:5px;
     background-color: white;
-    width: 70%;
+    width: 90%;
     height: 23%;
     margin: 25px;
     margin-top: 40px;
@@ -336,18 +362,19 @@ input {
     
 }
 
-.divimagepop>img {
-    height: 135px;
-}
 
 .imagepop {
     object-fit: cover;
-    width: 50%;
+    width: 35%;
     height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
+#titlemove {
+
+    padding-right: 20px;
+}
 
 
 #activites {
@@ -361,11 +388,15 @@ input {
 }
 
 .divgrand {
-
     background-color: white;
     width: 300%;
     height: 600px;
-
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+    border-radius:25px;
+    -moz-border-radius:25px;
+    -ms-border-radius:25px;
+    -o-border-radius:25px;
+    -webkit-border-radius:25px;
 }
 
 .divpetit {
@@ -374,6 +405,18 @@ input {
     height: 280px;
     margin-left: 20px;
     margin-top: 10px;
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    margin-top: 20px;
 }
 
 .imagegrand {
@@ -383,6 +426,12 @@ input {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
+ #logopopulaire {
+     position: absolute;
+     right: 0;
+     margin-top: 10px;
+ }
 
 .imagepetit {
     object-fit:cover;
@@ -399,6 +448,9 @@ input {
 .divcolumn {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
 }
 
  
@@ -407,8 +459,9 @@ footer {
     background-color:#DEEBFF;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 30px;
+    background-color: #F2F2F2; 
 }
 
 .ulfooter {
@@ -464,10 +517,23 @@ footer>li {
      
     .divimagepop {
         width: 90%;
+        height: 200px;
+    }
+
+    .imagepop {
+        
+        width: 50%;
+
+    }
+
+    #heberpop {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .imagehebergement {
         width:99%;
+        height: 65%;
     }
 
     #hiddenresponsive {
@@ -491,15 +557,29 @@ footer>li {
         height: 400px;
         width: 100%;
     }
-    }
+    
     
     #activites {
         flex-direction: column;
     }
 
-    .divgrand, .divcolumn {
-         width: 100%;
-        
+   .divgrand {
+    background-color: white;
+    width: 80%;
+    height: 280px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+   }
+
+    .divpetit {
+        margin-bottom: 50px;
     }
 
     #presentationsite {
@@ -518,36 +598,33 @@ footer>li {
         width: 100%;
     }
 
-     .divgrand {
-         height:50%;
-         margin-top: 10px;
-     }
-
-    .imagegrand {
-        height: 50%;
-        width: 90%;
-
+    #flextitlepopulaire {
+  
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    justify-content: flex-start;
+}
+    
+    #activites {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     footer {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
         margin-top: 10px;
         align-content: center;
         flex-wrap: wrap;
         justify-content: space-around;
+        background-color: #F2F2F2; 
     }
 
-    .imagehebergepent {
-
-          width: 360px;;
-
-
-    }
 
 }
-
 
 @media screen and (max-width:992px) {
 
@@ -616,7 +693,7 @@ footer>li {
         width: 100%;
     }
 
-    }
+    
     
     .imagehebergement {
         width:99%;
@@ -646,19 +723,24 @@ footer>li {
         width: 100%;
         align-content: space-between;
         justify-content: space-between;
-        flex-direction: row;
+        flex-direction: column;
     }
 
-     .divgrand {
-         height:50%;
-         margin-top: 10px;
-     }
-
-    .imagegrand {
-        height: 50%;
-        width: 90%;
-
-    }
+        .divgrand {
+            background-color: white;
+            width: 80%;
+            height: 280px;
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            box-shadow: 0px 0px 20px 0px rgb(0 0 0);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-items: center;
+           }
+    
 
     footer {
         display: flex;
@@ -668,10 +750,10 @@ footer>li {
         align-content: center;
         flex-wrap: wrap;
         justify-content: space-around;
+        background-color: #F2F2F2; 
     }
 
 }
-
 
 
 
