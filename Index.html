@@ -19,8 +19,8 @@
                 <img src="images/logo/Reservia@3x.png" id="mainlogo">
 
                 <ul id="mainul">
-                    <li class="mainlien"><a href="#">Hébergements</a></li>
-                    <li class="mainlien"><a href="#">Activités</a></li>
+                    <li class="mainlien"><a href="#heberpop">Hébergements</a></li>
+                    <li class="mainlien"><a href="#activites">Activités</a></li>
                     <li id="inscription"><a href="#">S'inscrire</a></li>
                 </ul>
         </div>    
@@ -205,7 +205,7 @@
                 </div>
             </div>
 
-               <!-- Prendre exemple sur le premier carré -->
+            
                
             <div class="divimagepop">
                 <img src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="image" class="imagepop">
@@ -261,9 +261,16 @@
 
       
           <div class="divgrand">
-              <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="port" class="imagegrand">
+            <picture class="imagegrand">
+                <source media="(max-width: 600px)" srcset="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                <source media="(min-width: 601px) and (max-width: 767px)" srcset="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                <source media="(min-width: 768px) and (max-width: 991px)" srcset="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                <source media="(min-width: 992px)" srcset="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
+            </picture>
+
               <p class="nomactivite">
-                  <b>Vieux Port</b>
+                Vieux Port
               </p>
            </div>
         
@@ -272,32 +279,91 @@
 
         
           <div class="divpetit">
-              <img src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort" class="imagepetit"><p class="nomactivite">
-                  <p><b>Fort de Pomègues</b></p>
-          </div>
-          <div class="divpetit"><img src="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Fort" class="imagepetit">
+            <picture class="imagepetit">
+                <source media="(max-width: 600px)" srcset="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                <source media="(min-width: 601px) and (max-width: 767px)" srcset="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                <source media="(min-width: 768px) and (max-width: 991px)" srcset="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                <source media="(min-width: 992px)" srcset="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Vieux port">
+            </picture>
             <p class="nomactivite">
-                <b>Îles du Frioul</b></p>
+                Fort de pomègues
+              </p>
+          </div>
+
+
+          <div class="divpetit">
+            <picture class="imagepetit">
+                <source media="(max-width: 600px)" srcset="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+                <source media="(min-width: 601px) and (max-width: 767px)" srcset="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+                <source media="(min-width: 768px) and (max-width: 991px)" srcset="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+                <source media="(min-width: 992px)" srcset="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+                <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Vieux port">
+            </picture>
+
+            <p class="nomactivite">
+                Îles du Frioul
+            </p>
           </div>
 
         </div>
 
         <div class="divgrand">
-            <img src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="port" class="imagegrand">
-            <p class="nomactivite">
-                <b>Parc National des Calanques</b></p></div>
+        <picture class="imagegrand">
+            <source media="(max-width: 600px)" srcset="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+            <source media="(min-width: 601px) and (max-width: 767px)" srcset="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+            <source media="(min-width: 768px) and (max-width: 991px)" srcset="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+            <source media="(min-width: 992px)" srcset="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+            <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Vieux port">
+        </picture>
 
+            <p class="nomactivite">
+                Parc National des Calanques
+            </p>
+        </div>
+  
+
+               
 
         <div class="divcolumn">
 
             <div class="divpetit">
-                <img src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Fort" class="imagepetit">
+
+
+                <picture class="imagepetit">
+                    <source media="(max-width: 600px)" srcset="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                    <source media="(min-width: 601px) and (max-width: 767px)" srcset="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                    <source media="(min-width: 768px) and (max-width: 991px)" srcset="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                    <source media="(min-width: 992px)" srcset="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                    <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Vieux port">
+                </picture>
+
+
                 <p class="nomactivite">
-                    <b>Notre-Dame-de-La-Garde</b></p></div>
+                    Notre-Dame-de-La-Garde
+                </p>
+            </div>
+
+
+
+
+
             <div class="divpetit">
-                <img src="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Fort" class="imagepetit">
+
+                <picture class="imagepetit">
+                    <source media="(max-width: 600px)" srcset="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                    <source media="(min-width: 601px) and (max-width: 767px)" srcset="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                    <source media="(min-width: 768px) and (max-width: 991px)" srcset="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                    <source media="(min-width: 992px)" srcset="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                    <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Vieux port">
+                </picture>
+
+
                 <p class="nomactivite">
-                    <b>Parc Longchamp</b></p></div>
+                    Parc Longchamp
+
+                </p>
+            </div>
   
           </div>        
 
