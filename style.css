@@ -197,12 +197,15 @@ input {
 }
 
 #infospan {
-    width: 20px;
-    height: 20px;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
     border: 2px solid #F2F2F2;
     color: #0065FC;
     border-radius: 30px ;
-    padding: 12px;
+    padding: 10px;
     -webkit-border-radius: 30px ;
     -moz-border-radius: 30px ;
     -ms-border-radius: 30px ;
@@ -224,6 +227,13 @@ input {
 
 
  }
+
+  #logementdispo {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: baseline;
+    }
+  
 
 #hebergements {
     display: flex;
@@ -254,7 +264,7 @@ input {
     -moz-border-radius:20px;
     -ms-border-radius:20px;
     -o-border-radius:20px;
-    margin: 10px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
 
@@ -549,6 +559,7 @@ footer>li {
     #heberpop {
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .imagehebergement {
@@ -591,10 +602,17 @@ footer>li {
         flex-direction: column;
     }
 
+    #hebermarseille {
+        margin-left: 20px;
+     }
+
+     #heberplus {
+        margin-left: 20px;
+    }
+
    .divgrand {
     background-color: white;
-    width: 80%;
-    margin-left: 20px;
+    width: 90%;
     margin-top: 10px;
     margin-bottom: 50px;
     box-shadow: 0px 0px 20px 0px rgb(0 0 0);
@@ -607,6 +625,8 @@ footer>li {
 
     .divpetit {
         margin-bottom: 50px;
+        width: 90%;
+        Margin-left:0px;
     }
 
     .divcolumn {
@@ -623,6 +643,7 @@ footer>li {
     #hebergements {
         width:100%;
         Padding: 0;
+        margin-top: 10px;
     }
 
     #populaire {
@@ -734,6 +755,8 @@ footer>li {
      
     .divimagepop {
         width: 90%;
+        
+
     }
 
 
@@ -766,12 +789,15 @@ footer>li {
         width: 100%;
         height: 400px;
         width: 100%;
+        box-shadow: -2px 2px 8px #c5c5c5;
+        padding: 5px;
     }
 
     
     
     .imagehebergement {
         width:99%;
+        padding: 0px;
     }
 
     #heberplus {
@@ -811,7 +837,7 @@ footer>li {
         align-content: space-between;
         justify-content: space-between;
         flex-direction: column;
-        margin-left:0;
+        margin-left: 25px;
     }
     .imagegrand {
         
@@ -825,8 +851,7 @@ footer>li {
 
         .divgrand {
             background-color: white;
-            width: 80%;
-            margin-right: 20px;
+            width: 90%;
             margin-top: 10px;
             margin-bottom: 50px;
             box-shadow: 0px 0px 20px 0px rgb(0 0 0);
