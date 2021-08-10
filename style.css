@@ -3,6 +3,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0px;
+    overflow-x: hidden; 
 }
 
 
@@ -680,6 +681,7 @@ footer>li {
 
 @media screen and (max-width:992px) {
 
+
     main {
         margin: 0;
     }
@@ -837,7 +839,7 @@ footer>li {
         align-content: space-between;
         justify-content: space-between;
         flex-direction: column;
-        margin-left: 25px;
+      
     }
     .imagegrand {
         
