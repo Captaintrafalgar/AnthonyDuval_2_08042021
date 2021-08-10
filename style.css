@@ -579,12 +579,11 @@ footer>li {
     }
     
     .imagegrand img {
-        height: 125px;
+        height: 250px;
         width: 100%;
     }
 
     .imagegrand {
-        height:125px;
         width:100%;
     }
 
@@ -815,12 +814,12 @@ footer>li {
         margin-left:0;
     }
     .imagegrand {
-        height:125px;
+        
         width:100%;
     }
 
     .imagegrand img {
-        height: 125px;
+        height: 250px;
         width: 100%;
     }
 
