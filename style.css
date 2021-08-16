@@ -649,6 +649,7 @@ footer>li {
 
     #populaire {
         width: 100%;
+        margin-right:20px;
     }
 
     #flextitlepopulaire {
@@ -676,6 +677,15 @@ footer>li {
         background-color: #F2F2F2; 
     }
 
+
+}
+
+@media screen and (max-width:1024px) {
+
+    #populaire {
+        width:100%;
+        Margin-left: 30px;
+    }
 
 }
 
@@ -839,6 +849,7 @@ footer>li {
         align-content: space-between;
         justify-content: space-between;
         flex-direction: column;
+        margin-right:20px;
       
     }
     .imagegrand {
